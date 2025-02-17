@@ -24,6 +24,7 @@ cffi==1.12.3
 chardet @ file:///home/conda/feedstock_root/build_artifacts/chardet_1602255615929/work
 Click==7.0
 cloudpickle @ file:///home/conda/feedstock_root/build_artifacts/cloudpickle_1674202310934/work
+cmudict==1.0.15
 coverage==4.5.4
 cryptography @ file:///home/conda/feedstock_root/build_artifacts/cryptography_1666563367667/work
 cxxfilt==0.2.0
@@ -57,8 +58,8 @@ hypothesis @ file:///home/conda/feedstock_root/build_artifacts/hypothesis_160999
 idna==2.8
 imageio @ file:///home/conda/feedstock_root/build_artifacts/imageio_1638434827035/work
 imgaug @ file:///home/conda/feedstock_root/build_artifacts/imgaug_1640909786103/work
-importlib-metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1653252959943/work
-importlib-resources @ file:///home/conda/feedstock_root/build_artifacts/importlib_resources_1688813467203/work
+importlib-metadata==6.7.0
+importlib-resources==5.12.0
 ipykernel @ file:///home/conda/feedstock_root/build_artifacts/ipykernel_1666723258080/work
 ipython @ file:///home/conda/feedstock_root/build_artifacts/ipython_1651241545558/work
 isoduration @ file:///home/conda/feedstock_root/build_artifacts/isoduration_1638811571363/work/dist
@@ -113,6 +114,7 @@ plotly @ file:///home/conda/feedstock_root/build_artifacts/plotly_1726179518483/
 pluggy @ file:///home/conda/feedstock_root/build_artifacts/pluggy_1648772743594/work
 preshed @ file:///home/conda/feedstock_root/build_artifacts/preshed_1665832352112/work
 prompt_toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1727341649933/work
+pronouncing==0.2.0
 protobuf==3.8.0
 psutil==5.6.7
 ptyprocess @ file:///home/conda/feedstock_root/build_artifacts/ptyprocess_1609419310487/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
