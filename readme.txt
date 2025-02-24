@@ -17,7 +17,7 @@ modell1.ipynb: Modell 1 (RandomSurvivalForest)
 modell2_new.ipynb: Modell 2 (XGBRegressor mit Hyperparametertuning und top Feature Importance)
 modell2_old: Ältere Version von Modell 2 (Wird nicht in Ensemble genutzt)
 modell3.ipynb: Modell 3 (LGBMClassifier)
-story_telling.ipynb: 2 Reiserische Grafiken
+story_telling.ipynb: 2 Reißerische Grafiken
 top_features_model.ipynb: EIne Weitere ältere Version von Modell 2 (Wird nicht in Ensemble genutzt)
 
 
