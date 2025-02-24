@@ -44,15 +44,11 @@ def clean_data(df, is_train=True):
         # Falls nötig, sicherstellen, dass 'efs' nur 1 oder 0 ist
         if 'efs' in df.columns:
             df['efs'] = df['efs'].fillna(0)  # Wenn NaN vorhanden ist, mit 0 füllen
-    
+
         # `efs_time` numerisch aufbereiten (NaN durch Median ersetzen)
         if 'efs_time' in df.columns:
-             # Wenn 'efs' 0 ist, soll 'efs_time' ebenfalls 0 sein
-            df.loc[df['efs'] == 0, 'efs_time'] = 0
             df['efs_time'] = pd.to_numeric(df['efs_time'], errors='coerce')
             df['efs_time'] = df['efs_time'].fillna(df['efs_time'].median())
-        # Wenn 'efs' 0 ist soll efs_time auch 0 sein
-
 
     # Numerische Spalten standardisieren (außer `efs_time` und `efs`)
     num_cols = [col for col in num_cols if col not in ['efs', 'efs_time']]
@@ -61,12 +57,8 @@ def clean_data(df, is_train=True):
         df[num_cols] = scaler.fit_transform(df[num_cols])
 
     
-    # Sicherstellen, dass alle Werte in kategorischen Spalten Strings sind
-    cat_cols = df.select_dtypes(include=["object"]).columns.tolist()
-    df[cat_cols] = df[cat_cols].astype(str)  # Erzwinge String-Datentyp für Encoder
     # Kategorische Spalten OneHotEncoden
     cat_cols = [col for col in cat_cols if col not in ['efs', 'efs_time']]  # `efs` und `efs_time` nicht einbeziehen
-    
     if cat_cols:
         encoder = OneHotEncoder(sparse_output=False, drop='first', handle_unknown='ignore')
         cat_encoded = encoder.fit_transform(df[cat_cols])
@@ -87,9 +79,5 @@ def clean_data(df, is_train=True):
     
     # Ausgabe der Spalten, die noch NaN-Werte enthalten
     print("Numerische Spalten mit NaN-Werten:", numerical_nan_columns)
-    problematische_spalten = [col for col in df.columns if any(c in col for c in ["[", "]", "<", ">", " "])]
-    print("⚠️ Problematische Spalten:", problematische_spalten)
-    # Spaltennamen bereinigen, um Sonderzeichen zu entfernen
-    df.columns = df.columns.str.replace(r"[^a-zA-Z0-9_]", "_", regex=True)
 
     return df
