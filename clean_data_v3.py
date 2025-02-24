@@ -90,5 +90,7 @@ def clean_data(df, is_train=True):
     print("⚠️ Problematische Spalten:", problematische_spalten)
     # Spaltennamen bereinigen, um Sonderzeichen zu entfernen
     df.columns = df.columns.str.replace(r"[^a-zA-Z0-9_]", "_", regex=True)
+    df.fillna(0, inplace=True)
+    df.columns = df.columns.str.strip()
     
     return df
