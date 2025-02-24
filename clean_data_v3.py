@@ -60,7 +60,6 @@ def clean_data(df, is_train=True):
         scaler = StandardScaler()
         df[num_cols] = scaler.fit_transform(df[num_cols])
 
-    
     # Sicherstellen, dass alle Werte in kategorischen Spalten Strings sind
     cat_cols = df.select_dtypes(include=["object"]).columns.tolist()
     df[cat_cols] = df[cat_cols].astype(str)  # Erzwinge String-Datentyp für Encoder
@@ -91,5 +90,5 @@ def clean_data(df, is_train=True):
     print("⚠️ Problematische Spalten:", problematische_spalten)
     # Spaltennamen bereinigen, um Sonderzeichen zu entfernen
     df.columns = df.columns.str.replace(r"[^a-zA-Z0-9_]", "_", regex=True)
-
+    
     return df
