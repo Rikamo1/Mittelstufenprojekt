@@ -19,3 +19,9 @@ modell2_old: Ältere Version von Modell 2 (Wird nicht in Ensemble genutzt)
 modell3.ipynb: Modell 3 (LGBMClassifier)
 story_telling.ipynb: 2 Reiserische Grafiken
 top_features_model.ipynb: EIne Weitere ältere Version von Modell 2 (Wird nicht in Ensemble genutzt)
+
+
+Wichtige Zusatzinformationen gibt es in den folgenden Videos:
+https://youtu.be/SRN8er8nNkk?si=ieFIaCApPU74JduU
+https://youtu.be/nHSvhPPehRg?si=cERznXFbq6xhO4HV
+https://youtu.be/N1BcUgkY-MY?si=ZhMshOf007AXs9hK

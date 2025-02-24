@@ -1,13 +1,13 @@
 
     Was ich erwarte:
         Erste “Insights”, d.h. explorative Datenanalayse inkl. Charts (Verteilungen, erste Korrelationen, Nullwerte, etc.,)
-        Datacleaning
+        Datacleaningx
         Feature Engineering
-        Modellbildung
-        Feature Importance / Permutation Importance
+        Modellbildungx
+        Feature Importance / Permutation Importancex
         Mischung verschiedener Modelle (Ensemble)
-        Für die besten Modelle: Hyperparameter Tuning (GridSearchCV)
-        Eine Submission soll für die test.csv erstellt werden und bei Kaggle hochgeladen werden
+        Für die besten Modelle: Hyperparameter Tuning (GridSearchCV)x
+        Eine Submission soll für die test.csv erstellt werden und bei Kaggle hochgeladen werdenx
         Am Ende zwei reißerische Grafiken mit jeweils einer Einsicht auf Basis der KI-Modelle (storytelling beachten!)
         Für jedes Kapitel eine kurze (gerne stichwortartige) Zusammenfassung im Notebook, was gemacht bzw. was noch so versucht wurde, jedoch nicht geklappt hat und welche Erkentnisse im Kapitel gesammelt wurden.
 
